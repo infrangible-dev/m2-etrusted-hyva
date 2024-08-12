@@ -1,0 +1,32 @@
+<?php
+
+declare(strict_types=1);
+
+use Infrangible\ETrusted\Helper\Block;
+use Magento\Framework\View\Element\Template;
+use Magento\Framework\View\TemplateEngine\Php;
+
+/**
+ * @author      Andreas Knollmann
+ * @copyright   2014-2024 Softwareentwicklung Andreas Knollmann
+ * @license     http://www.opensource.org/licenses/mit-license.php MIT
+ */
+
+/** @var Php $this */
+/** @var Template $block */
+
+/** @var Block $blockHelper */
+$blockHelper = $this->helper(Block::class);
+
+$review = $block->getData('item');
+?>
+
+<div class="item etrusted-review">
+    <?php echo $blockHelper->getRatingHtml($block, $review, 'Infrangible_ETrustedHyva::widget/reviews/item/rating.phtml'); ?>
+    <div class="etrusted-review-details">
+        <div class="etrusted-review-title"><?php echo $review['name']; ?></div>
+        <div class="etrusted-review-date"><?php echo $review['date']; ?> - verifiziert</div>
+        <div class="etrusted-review-comment"><?php echo is_array($review['comment']) ? '' : $review['comment'] ?></div>
+    </div>
+    <div class="etrusted-review-icon"><img width="54" height="64" src="https://www.trustedshops.de/wp-content/uploads/2022/02/@2xtrustmark-header-1.png" alt="Trusted Shops Logo"/></div>
+</div>

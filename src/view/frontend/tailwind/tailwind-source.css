@@ -1,0 +1,63 @@
+/**
+ * @author      Andreas Knollmann
+ * @copyright   2014-2024 Softwareentwicklung Andreas Knollmann
+ * @license     http://www.opensource.org/licenses/mit-license.php MIT
+ */
+
+.etrusted-rating-summary {
+    display: inline-block;
+    text-align: center;
+}
+
+.etrusted-rating-summary h3.etrusted-rating-summary-label {
+    display: inline-block;
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+.etrusted-rating-summary h3.etrusted-rating-summary-label span.etrusted-rating-summary-count {
+    font-size: .6em;
+}
+
+.etrusted-rating-summary .etrusted-rating-summary-detail {
+    margin: 0 0 10px;
+    background-color: #cb0b0f;
+    color: #fff;
+    padding: .5em 1em;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #ccc;
+}
+
+.etrusted-rating-summary .etrusted-rating-summary-detail .etrusted-rating-summary-value {
+    display: block;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.etrusted-rating-summary .etrusted-rating-summary-detail .etrusted-rating-summary-value-label {
+    display: block;
+}
+
+.etrusted-reviews section[aria-roledescription="Carousel"] {
+    margin: 0;
+}
+
+.etrusted-reviews .etrusted-review .etrusted-review-details {
+    float: left;
+    max-width: 85%;
+}
+
+.etrusted-reviews .etrusted-review .etrusted-review-details .etrusted-review-title {
+    color: #cb0b0f;
+    font-weight: bold;
+}
+
+.etrusted-reviews .etrusted-review .etrusted-review-details .etrusted-review-date {
+    font-size: .75em;
+    margin-bottom: 10px;
+}
+
+.etrusted-reviews .etrusted-review .etrusted-review-icon {
+    float: right;
+}
